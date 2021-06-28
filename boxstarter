@@ -22,35 +22,34 @@ cinst github
 cinst -y nodejs.install
 npm install -g npm-windows-upgrade
 
-## Editors
-cinst -y visualstudiocode
+## Latest vscode
+cinst -y vscode
 
-## Visual Studio 2017
-cinst -y visualstudio2017community
+## VSCode Extensions
+cinst -y vscode-csharp
+cinst -y vscode-ruby
+cinst -y vscode-docker
+cinst -y vscode-python
+cinst -y vscode-java
+cinst -y vscode-spring-initializr
+cinst -y vscode-drawio
+cinst -y vscode-gitignore
 if (Test-PendingReboot) { Invoke-Reboot }
+
 
 ## Ruby, Go, Python
 cinst -y ruby
 cinst -y ruby.devkit
-
 cinst -y python2
 
 if (Test-PendingReboot) { Invoke-Reboot }
 
 ## Basics
-cinst -y vlc
-cinst -y GoogleChrome
 cinst -y 7zip.install
 cinst -y sysinternals
-cinst -y DotNet3.5
+cinst -y dotnet-sdk
 
-# cinst -y DotNet4.0 -- not needed on windows 8
-# cinst -y DotNet4.5 -- not needed on windows 10
-# cinst -y PowerShell -- not needed on windows 10
 if (Test-PendingReboot) { Invoke-Reboot }
 
 # Pinning Things
 Install-ChocolateyPinnedTaskBarItem "$env:programfiles\Google\Chrome\Application\chrome.exe"
-
-# Let's get Updates, too
-Install-WindowsUpdate -acceptEula
