@@ -32,7 +32,7 @@ This will install the following:
  
 
 #### Package Management: Chocolatey
-Chocolatey is a powerful package manager for Windows, working sort of like apt-get or homebrew. Let's get that first. Fire up CMD.exe as Administrator and run:
+Chocolatey is a powerful package manager for Windows. Fire up CMD.exe as Administrator and run:
 
 ```powershell
 @powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
