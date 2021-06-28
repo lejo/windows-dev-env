@@ -52,12 +52,17 @@ cinst -y dotnet-sdk
 if (Test-PendingReboot) { Invoke-Reboot }
 
 ## Cloud CLI
-cinst awscli
-cinst awstools.powershell
-cinst azure-cli
+cinst -y awscli
+cinst -y awstools.powershell
+cinst -y azure-cli
 
 ## Docker to build containers
-cinst docker-for-windows
+cinst -y docker-for-windows
+
+## Add Kubernetes
+cinst -y kubernetes-cli
+cinst -y kubernetes-helm
+cinst -y minikube
 
 # Pinning Things
 Install-ChocolateyPinnedTaskBarItem "$env:programfiles\Google\Chrome\Application\chrome.exe"
