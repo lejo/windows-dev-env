@@ -66,6 +66,3 @@ cinst -y docker-for-windows
 cinst -y kubernetes-cli
 cinst -y kubernetes-helm
 cinst -y minikube
-
-# Pinning Things
-Install-ChocolateyPinnedTaskBarItem "$env:programfiles\Google\Chrome\Application\chrome.exe"
