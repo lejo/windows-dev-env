@@ -15,8 +15,8 @@ cinst -y poshgit
 # Restart PowerShell / CMDer before moving on - or run
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
 
-cinst Git-Credential-Manager-for-Windows
-cinst github
+cinst -y Git-Credential-Manager-for-Windows
+cinst -y github
 
 ## Node, npm
 cinst -y nodejs.install
