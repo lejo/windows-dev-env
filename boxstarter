@@ -39,7 +39,8 @@ cinst -y vscode-gitignore
 if (Test-PendingReboot) { Invoke-Reboot }
 
 
-## Ruby, Go, Python
+## Common Languages: Java, Ruby, Go, Python
+cinst -y openjdk
 cinst -y ruby
 cinst -y ruby.devkit
 cinst -y python2
