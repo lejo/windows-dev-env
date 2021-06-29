@@ -3,12 +3,12 @@ reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUn
 .\gpupdate.exe /Force
 
 Update-Help
+Update-ExecutionPolicy Unrestricted
 
 # Install Chocolatey
-Update-ExecutionPolicy Unrestricted
-iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+# iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
-cinst -y Boxstarter
+# cinst -y Boxstarter
 
 cinst -y Microsoft-Hyper-V-All -source windowsFeatures
 
