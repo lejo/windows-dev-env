@@ -18,10 +18,6 @@ Start PowerShell as Administrator and run:
 Install-BoxstarterPackage -PackageName https://raw.githubusercontent.com/lejo/windows-development-environment/master/boxstarter -DisableReboots
 ```
 
-```powershell
-START http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/lejo/windows-development-environment/master/boxstarter
-```
-
 This will install the following:
 
  * Package Management
