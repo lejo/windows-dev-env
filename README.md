@@ -3,6 +3,7 @@ A fresh Windows isn't entirely ready for modern development, but all the tools y
 
 ## Install the prerequisites
 
+ * Get Local Admin Rights for your workstation.
  * Enable Developer Mode (Settings - Update & security > For developers)
  * Search for “Windows Features” and choose “Turn Windows features on or off” and enable Windows Subsystem for Linux.
  * Install [Powershell](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-7.1)
