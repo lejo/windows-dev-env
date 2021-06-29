@@ -4,12 +4,19 @@ This document outlines how to configure your Windows in a way that it can easily
 ## Install the prerequisites
 
  * Get Local Admin Rights for your workstation. See [instructions here](https://softwareone.service-now.com/sp/?sys_kb_id=e9a6abdbdc050e00b82b7c37157ee971&id=kb_article_view&sysparm_rank=1&sysparm_tsqueryId=47f0fde11b05f450351debd9bb4bcbee)
- * Open a new Windows Powershell with Administrator rights. Search for "Windows Powershell", right click and "Run as Administrator"
+ * Install boxstarter
+```powershell
+iex ((New-Object System.Net.WebClient).DownloadString('https://boxstarter.org/bootstrapper.ps1')); Get-Boxstarter -Force
+```
 
 
 ## Run dev setup script as follows:
 
 Start PowerShell as Administrator and run:
+
+```powershell
+Install-BoxstarterPackage -PackageName https://raw.githubusercontent.com/lejo/windows-development-environment/master/boxstarter -DisableReboots
+```
 
 ```powershell
 START http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/lejo/windows-development-environment/master/boxstarter
