@@ -10,9 +10,9 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://boxstarter.org/bo
 ```
 
 
-## Run dev setup script as follows:
+## Run dev setup script to install basic development tools and development kits. 
 
-Start PowerShell as Administrator and run:
+Start PowerShell as Administrator and run the command below. This will take around 60 minutes to complete. 
 
 ```powershell
 Install-BoxstarterPackage -PackageName https://raw.githubusercontent.com/lejo/windows-development-environment/master/boxstarter -DisableReboots
@@ -30,3 +30,16 @@ This will install the following:
  * Docker & Kubernetes
  * Cloud CLI - Azure & AWS
  * Basic Tools - 7zip & sysinternals
+
+Please make sure the entire process completes and the summary at the end shows no Errors. Keep in mind, you will see see warnings through out the installation and those are ok.
+
+```powershell
+Errors       : {}
+ComputerName : localhost
+Completed    : True
+FinishTime   : 6/29/2021 3:35:00 PM
+StartTime    : 6/29/2021 2:48:13 PM
+```
+
+
+## Configure tools
