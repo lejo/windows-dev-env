@@ -1,5 +1,5 @@
 ## Setup Windows 10 for Modern Development
-This document outlines how to configure your Windows in a way that it can easily handle development tasks. 
+This document outlines how to configure your Windows to handle development tasks. 
 
 ## Install the prerequisites
 
