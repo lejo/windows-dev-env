@@ -13,6 +13,9 @@ cinst -y Microsoft-Hyper-V-All -source windowsFeatures
 # Packages
 cinst -y hyper
 
+# Activate Windows linux subsystem
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+
 ## Git
 cinst -y git.install
 cinst -y poshgit
