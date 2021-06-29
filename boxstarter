@@ -1,6 +1,6 @@
 # Enable Developer Mode
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock" /t REG_DWORD /f /v "AllowDevelopmentWithoutDevLicense" /d "1"
-.\gpupdate.exe /Force
+# .\gpupdate.exe /Force
 
 Update-Help
 Update-ExecutionPolicy Unrestricted
