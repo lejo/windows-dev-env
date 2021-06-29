@@ -1,5 +1,5 @@
 ## Setup Windows 10 for Modern Development
-A fresh Windows isn't entirely ready for modern development, but all the tools you need are available. A good terminal, popular bash tools, Git, a decent package manager - when properly setup, modern development on Windows can be a lot of fun. In particular, this document outlines how to configure your Windows in such a way that it can easily handle most development tasks usually run on a Mac OS X or a Linux distro.
+This document outlines how to configure your Windows in a way that it can easily handle development tasks. 
 
 ## Install the prerequisites
 
@@ -27,13 +27,3 @@ This will install the following:
  * Docker & Kubernetes
  * Cloud CLI - Azure & AWS
  * Basic Tools - 7zip & sysinternals
- 
-
-#### Package Management: Chocolatey
-Chocolatey is a powerful package manager for Windows. Fire up CMD.exe as Administrator and run:
-
-```powershell
-@powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
-```
-
-Once done, you can install packages by running `cinst` (short for `choco install`). Most packages below will be installed with Chocolatey.
