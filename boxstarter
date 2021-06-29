@@ -32,7 +32,7 @@ cinst -y github
 
 ## Node, npm
 cinst -y nodejs.install
-npm install -g npm-windows-upgrade
+# npm install -g npm-windows-upgrade
 
 ## Latest vscode
 cinst -y vscode
