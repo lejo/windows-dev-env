@@ -2,6 +2,8 @@
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock" /t REG_DWORD /f /v "AllowDevelopmentWithoutDevLicense" /d "1"
 .\gpupdate.exe /Force
 
+Update-Help
+
 # Install Chocolatey
 Update-ExecutionPolicy Unrestricted
 iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
@@ -14,7 +16,9 @@ cinst -y Microsoft-Hyper-V-All -source windowsFeatures
 cinst -y hyper
 
 # Activate Windows linux subsystem
-Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux -NoRestart
+
+if (Test-PendingReboot) { Invoke-Reboot }
 
 ## Git
 cinst -y git.install
