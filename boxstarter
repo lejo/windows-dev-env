@@ -32,7 +32,6 @@ cinst -y github
 
 ## Node, npm
 cinst -y nodejs.install
-# npm install -g npm-windows-upgrade
 
 ## Latest vscode
 cinst -y vscode
@@ -78,3 +77,6 @@ cinst -y docker-for-windows
 cinst -y kubernetes-cli
 cinst -y kubernetes-helm
 cinst -y minikube
+
+## Updates
+npm install -g npm-windows-upgrade
