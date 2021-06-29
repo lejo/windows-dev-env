@@ -5,9 +5,6 @@ A fresh Windows isn't entirely ready for modern development, but all the tools y
 
  * Get Local Admin Rights for your workstation. See [instructions here](https://softwareone.service-now.com/sp/?sys_kb_id=e9a6abdbdc050e00b82b7c37157ee971&id=kb_article_view&sysparm_rank=1&sysparm_tsqueryId=47f0fde11b05f450351debd9bb4bcbee)
  * Open a new Windows Powershell with Administrator rights. Search for "Windows Powershell", right click and "Run as Administrator"
- * Enable Developer Mode (Settings - Update & security > For developers)
- * Search for “Windows Features” and choose “Turn Windows features on or off” and enable Windows Subsystem for Linux.
- * Install [Boxstarter](https://boxstarter.org/InstallBoxstarter) using the Boxstarter zip file method.
 
 
 ## Run dev setup script as follows:
