@@ -5,6 +5,9 @@ This document outlines how to configure your Windows to handle development tasks
 
  * Get Local Admin Rights for your workstation. See [instructions here](https://softwareone.service-now.com/sp/?sys_kb_id=e9a6abdbdc050e00b82b7c37157ee971&id=kb_article_view&sysparm_rank=1&sysparm_tsqueryId=47f0fde11b05f450351debd9bb4bcbee)
  * Install boxstarter by running the following command:
+
+Start PowerShell as Administrator and run the command below. This will take around 60 minutes to complete. 
+
 ```powershell
 iex ((New-Object System.Net.WebClient).DownloadString('https://boxstarter.org/bootstrapper.ps1')); Get-Boxstarter -Force
 ```
