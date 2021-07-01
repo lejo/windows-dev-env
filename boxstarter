@@ -55,7 +55,7 @@ cinst -y openjdk
 cinst -y dotnet-sdk
 cinst -y ruby
 cinst -y ruby.devkit
-cinst -y python2
+cinst -y python
 
 if (Test-PendingReboot) { Invoke-Reboot }
 
