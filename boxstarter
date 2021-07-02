@@ -45,6 +45,7 @@ cinst -y vscode-java
 cinst -y vscode-spring-initializr
 cinst -y vscode-drawio
 cinst -y vscode-gitignore
+cinst -y ms-vscode-remote.remote-wsl
 
 
 if (Test-PendingReboot) { Invoke-Reboot }
