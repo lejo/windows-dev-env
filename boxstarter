@@ -17,6 +17,12 @@ cinst -y hyper
 
 # Activate Windows linux subsystem
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux -NoRestart
+Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform -NoRestart
+
+if (Test-PendingReboot) { Invoke-Reboot }
+
+# Upgrade to WSL
+cinst -y wsl
 
 if (Test-PendingReboot) { Invoke-Reboot }
 
@@ -45,7 +51,7 @@ cinst -y vscode-java
 cinst -y vscode-spring-initializr
 cinst -y vscode-drawio
 cinst -y vscode-gitignore
-cinst -y ms-vscode-remote.remote-wsl
+cinst -y wsl-alpine
 
 
 if (Test-PendingReboot) { Invoke-Reboot }
