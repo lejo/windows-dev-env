@@ -84,7 +84,7 @@ npm install -g npm-windows-upgrade
 
 ## Add domain user to docker group
 $currentUser = $(Get-WMIObject -class Win32_ComputerSystem | select username).username
-Write-Host "Domain username is: $currentUser."
+Write-Host "Adding domain user '$currentUser' to local 'docker-users' group."
 Add-LocalGroupMember -Group "docker-users" -Member $currentUser
 
 ## Restart
