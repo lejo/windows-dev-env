@@ -82,5 +82,10 @@ cinst -y minikube
 ## Updates
 npm install -g npm-windows-upgrade
 
+## Add domain user to docker group
+$currentUser = $(Get-WMIObject -class Win32_ComputerSystem | select username).username
+Write-Host "Domain username is: $currentUser."
+Add-LocalGroupMember -Group "docker-users" -Member $currentUser
+
 ## Restart
 Restart-Computer
