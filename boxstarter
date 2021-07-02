@@ -52,6 +52,7 @@ cinst -y vscode-spring-initializr
 cinst -y vscode-drawio
 cinst -y vscode-gitignore
 cinst -y wsl-alpine
+cinst -y vscode-powershell
 
 
 if (Test-PendingReboot) { Invoke-Reboot }
