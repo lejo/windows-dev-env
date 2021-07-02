@@ -63,6 +63,7 @@ if (Test-PendingReboot) { Invoke-Reboot }
 cinst -y 7zip.install
 cinst -y sysinternals
 cinst -y powertoys
+cinst -y 1password4
 
 if (Test-PendingReboot) { Invoke-Reboot }
 
