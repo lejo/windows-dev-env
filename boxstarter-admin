@@ -49,6 +49,7 @@ cinst -y vscode-docker
 cinst -y vscode-python
 cinst -y vscode-java
 cinst -y vscode-spring-initializr
+cinst -y vscode-spring-boot
 cinst -y vscode-drawio
 cinst -y vscode-gitignore
 cinst -y wsl-alpine
