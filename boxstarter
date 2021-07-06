@@ -97,7 +97,8 @@ Write-Host "Adding domain user '$currentUser' to local 'docker-users' group."
 Add-LocalGroupMember -Group "docker-users" -Member $currentUser
 
 ## Windows Services
- Set-Service ssh-agent -StartupType Automatic
+Set-Service ssh-agent -StartupType Automatic
+Start-Service ssh-agent 
 
 ## Restart
 Restart-Computer
