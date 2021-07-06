@@ -18,7 +18,7 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://boxstarter.org/bo
 Start PowerShell as Administrator and run the command below. This will take around 60 minutes to complete. *Make sure to close all other open applications and windows as your computer will restart at the end of this.*
 
 ```powershell
-Install-BoxstarterPackage -PackageName https://raw.githubusercontent.com/lejo/windows-development-environment/master/boxstarter -DisableReboots
+Install-BoxstarterPackage -PackageName https://raw.githubusercontent.com/lejo/windows-development-environment/master/boxstarter-admin -DisableReboots
 ```
 
 This will install the following:
