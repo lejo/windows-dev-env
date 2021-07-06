@@ -96,5 +96,8 @@ $currentUser = $(Get-WMIObject -class Win32_ComputerSystem | select username).us
 Write-Host "Adding domain user '$currentUser' to local 'docker-users' group."
 Add-LocalGroupMember -Group "docker-users" -Member $currentUser
 
+## Windows Services
+ Set-Service ssh-agent -StartupType Automatic
+
 ## Restart
 Restart-Computer
