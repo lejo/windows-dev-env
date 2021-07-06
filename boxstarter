@@ -1,0 +1,3 @@
+## Create ssh keys
+ssh-keygen -b 2048 -t rsa -f $home/.ssh/id_rsa -q -C "$env:UserName@softwareone.com" -N """"
+ssh-add $home/.ssh/id_rsa
