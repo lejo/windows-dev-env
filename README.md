@@ -46,3 +46,11 @@ StartTime    : 6/29/2021 2:48:13 PM
 
 
 ## Configure tools
+
+Start PowerShell normally and run the command below. 
+
+```powershell
+Install-BoxstarterPackage -PackageName https://raw.githubusercontent.com/lejo/windows-development-environment/master/boxstarter -DisableReboots
+```
+
+
