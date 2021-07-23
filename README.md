@@ -50,7 +50,7 @@ StartTime    : 6/29/2021 2:48:13 PM
 Start PowerShell normally and run the command below. 
 
 ```powershell
-iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/lejo/windows-dev-env/master/boxstarter'))
+iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/lejo/windows-dev-env/master/configuration_script'))
 ```
 
 
