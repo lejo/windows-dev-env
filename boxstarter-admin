@@ -42,7 +42,7 @@ cinst -y nodejs.install
 ## Development Tools
 cinst -y vscode
 cinst -y postman
-cinst -y visualstudio2019community --package-parameters "--allWorkloads --includeRecommended --includeOptional --passive --locale en-US"
+cinst -y visualstudio2019community --package-parameters "--add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.Python --add Microsoft.VisualStudio.Workload.Node --add Microsoft.VisualStudio.Workload.NetWeb --add Microsoft.VisualStudio.Workload.NetCoreTools --add Microsoft.VisualStudio.Workload.DataScience --passive --locale en-US"
 
 ## VSCode Extensions
 cinst -y vscode-csharp
