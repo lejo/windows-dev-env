@@ -41,8 +41,11 @@ cinst -y nodejs.install
 
 ## Development Tools
 cinst -y vscode
+if (Test-PendingReboot) { Invoke-Reboot }
 cinst -y visualstudio2019community --package-parameters "--add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.Python --add Microsoft.VisualStudio.Workload.Node --add Microsoft.VisualStudio.Workload.NetWeb --add Microsoft.VisualStudio.Workload.NetCoreTools --add Microsoft.VisualStudio.Workload.DataScience --passive --locale en-US"
+if (Test-PendingReboot) { Invoke-Reboot }
 cinst -y sql-server-management-studio
+if (Test-PendingReboot) { Invoke-Reboot }
 
 ## VSCode Extensions
 cinst -y vscode-csharp
