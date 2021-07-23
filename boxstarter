@@ -41,7 +41,6 @@ cinst -y nodejs.install
 
 ## Development Tools
 cinst -y vscode
-cinst -y postman
 cinst -y visualstudio2019community --package-parameters "--add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.Python --add Microsoft.VisualStudio.Workload.Node --add Microsoft.VisualStudio.Workload.NetWeb --add Microsoft.VisualStudio.Workload.NetCoreTools --add Microsoft.VisualStudio.Workload.DataScience --passive --locale en-US"
 cinst -y sql-server-management-studio
 
@@ -55,8 +54,10 @@ cinst -y vscode-spring-initializr
 cinst -y vscode-spring-boot
 cinst -y vscode-drawio
 cinst -y vscode-gitignore
-cinst -y wsl-alpine
 cinst -y vscode-powershell
+
+# Alpine Linux
+cinst -y wsl-alpine
 
 
 if (Test-PendingReboot) { Invoke-Reboot }
@@ -77,6 +78,7 @@ cinst -y 7zip.install
 cinst -y sysinternals
 cinst -y powertoys
 cinst -y 1password4
+cinst -y postman
 
 if (Test-PendingReboot) { Invoke-Reboot }
 
