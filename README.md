@@ -28,11 +28,11 @@ This will install the following:
  * PowerShell Profile
  * Node & NPM
  * Git
- * VS Code IDE
+ * VS Code IDE, Visual Studio Community & SQL Server Mgmt
  * Common Languages like Java, .Net, Ruby, Go & Python
  * Docker & Kubernetes
  * Cloud CLI - Azure & AWS
- * Basic Tools - 7zip & sysinternals
+ * Basic Tools - Postman, 7zip & powertoys, sysinternals
 
 Please make sure the entire process completes and the summary at the end shows no Errors. Keep in mind, you will see see warnings through out the installation and those are ok.
 
