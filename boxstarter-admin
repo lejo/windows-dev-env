@@ -64,6 +64,7 @@ if (Test-PendingReboot) { Invoke-Reboot }
 ## Common Languages: Java, Ruby, Go, Python
 cinst -y openjdk
 cinst -y dotnet-sdk
+cinst -y dotnetcore-sdk
 cinst -y ruby
 cinst -y ruby.devkit
 cinst -y python
