@@ -15,7 +15,7 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://boxstarter.org/bo
 
 ## Run dev setup script to install basic development tools and development kits. 
 
-Start PowerShell as Administrator and run the command below. This will take around 60 minutes to complete. *Make sure to close all other open applications and windows as your computer will restart at the end of this.*
+Start PowerShell as Administrator and run the command below. This will take around 2 hours to complete. *Make sure to close all other open applications and windows as your computer will restart at the end of this.*
 
 ```powershell
 Install-BoxstarterPackage -PackageName https://raw.githubusercontent.com/lejo/windows-dev-env/master/boxstarter -DisableReboots
