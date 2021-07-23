@@ -39,8 +39,10 @@ cinst -y github
 ## Node, npm
 cinst -y nodejs.install
 
-## Latest vscode
+## Development Tools
 cinst -y vscode
+cinst -y postman
+cinst -y visualstudio2019community --package-parameters "--allWorkloads --includeRecommended --includeOptional --passive --locale en-US"
 
 ## VSCode Extensions
 cinst -y vscode-csharp
