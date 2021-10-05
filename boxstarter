@@ -98,6 +98,9 @@ cinst -y kubernetes-cli
 cinst -y kubernetes-helm
 cinst -y minikube
 
+## Powershell / Terminal Colors
+cinst -y microsoft-windows-terminal
+
 ## Updates
 npm install -g npm-windows-upgrade
 
