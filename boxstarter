@@ -22,7 +22,7 @@ Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform -NoRes
 if (Test-PendingReboot) { Invoke-Reboot }
 
 # Upgrade to WSL
-cinst -y wsl
+cinst -y wsl2
 
 if (Test-PendingReboot) { Invoke-Reboot }
 
@@ -48,19 +48,20 @@ cinst -y vscode
 #if (Test-PendingReboot) { Invoke-Reboot }
 
 ## VSCode Extensions
-cinst -y vscode-csharp
-cinst -y vscode-ruby
-cinst -y vscode-docker
-cinst -y vscode-python
-cinst -y vscode-java
-cinst -y vscode-spring-initializr
-cinst -y vscode-spring-boot
-cinst -y vscode-drawio
-cinst -y vscode-gitignore
-cinst -y vscode-powershell
+#cinst -y vscode-csharp
+#cinst -y vscode-ruby
+#cinst -y vscode-docker
+#cinst -y vscode-python
+#cinst -y vscode-java
+#cinst -y vscode-spring-initializr
+#cinst -y vscode-spring-boot
+#cinst -y vscode-drawio
+#cinst -y vscode-gitignore
+#cinst -y vscode-powershell
 
 # Alpine Linux
-cinst -y wsl-alpine
+# cinst -y wsl-alpine
+wsl --install
 
 
 if (Test-PendingReboot) { Invoke-Reboot }
