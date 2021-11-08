@@ -3,7 +3,7 @@ reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUn
 # .\gpupdate.exe /Force
 
 Update-Help
-Update-ExecutionPolicy Unrestricted
+Set-ExecutionPolicy Unrestricted
 
 # Install Chocolatey
 # iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
